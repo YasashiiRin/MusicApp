@@ -1,6 +1,7 @@
 :root {
     --primary-color: #ec1f55;
     --text-color: #333;
+    --while-color: #fff;
 }
 
 * {
@@ -10,7 +11,8 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-image: url('../img/bg1.png');
+    background-attachment: fixed;
 }
 
 html {
@@ -38,12 +40,12 @@ html {
 
 .dashboard {
     padding: 16px 16px 14px;
-    background-color: #fff;
+    background-image: linear-gradient(45deg, #FFAD94, #FF9B9B);
     position: fixed;
     top: 0;
     width: 100%;
     max-width: 480px;
-    border-bottom: 1px solid #ebebeb;
+    border-radius: 0 0 5px 5px;
 }
 
 /* HEADER */
@@ -58,7 +60,7 @@ header h4 {
 }
 
 header h2 {
-    color: var(--text-color);
+    color: var(--while-color);
     font-size: 20px;
 }
 
@@ -93,7 +95,7 @@ header h2 {
 }
 
 .control .btn.active {
-    color: var(--primary-color);
+    color: #FF445A;
 }
 
 .control .btn-toggle-play {
@@ -110,7 +112,6 @@ header h2 {
 
 .progress {
     width: 100%;
-    -webkit-appearance: none;
     height: 6px;
     background: #d3d3d3;
     outline: none;
@@ -132,21 +133,21 @@ header h2 {
 .playlist {
 
     margin-top: 408px;
-    padding: 12px;
+    padding: 0;
 }
 
 .song {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
     background-color: #fff;
     padding: 8px 16px;
     border-radius: 5px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 .song.active {
-    background-color: var(--primary-color);
+    background-image: linear-gradient(45deg, #FF794F, #FF445A);
 }
 
 .song:active {
